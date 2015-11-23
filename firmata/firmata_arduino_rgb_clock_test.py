@@ -1,24 +1,19 @@
 #!/usr/bin/python
 ######################################################################
 """
-firmata_arduino_rgb_clock_test.py - demo to use psutil and pyfirmata
+firmata_arduino_rgb_clock_test.py - demo to use pyfirmata
 	modules on Python host to control RGB LED's wired to PWM pins on
 	an Arduino serial slave running Firmata.
 
 Bart Spainhour <bart@tinkernauts.org>
 	
 Uses Python modules:
- https://github.com/giampaolo/psutil
- A cross-platform process and system utilities module for Python 
- 
  https://github.com/tino/pyFirmata
  Python interface for the Firmata (http://firmata.org/) protocol.
  
 """
 ######################################################################
 from pyfirmata import Arduino, util
-import psutil
-
 from datetime import datetime
 from sys import stdout
 from time import sleep
